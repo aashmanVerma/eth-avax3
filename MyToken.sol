@@ -23,4 +23,9 @@ contract MyToken is ERC20 {
     function burn(uint256 amount) public {
         _burn(msg.sender, amount);
     }
+
+    function transfer(address from, address to, uint val) external   {
+        require(balanceOf(from) >= val, "Not sufficient balance");
+        _transfer(from, to, val);
+    }
 }

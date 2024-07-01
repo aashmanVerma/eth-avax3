@@ -21,6 +21,7 @@ More added functions and variable -
 2. Burn function - to burn/destroy token in a particular account
 3. owner variable - to check the owner account address
 4. onlyOnwer modifier - to check if the mint function is only to be called by the owner
+5. Transfer function - to transfer from one account to another
 
 ## Getting Started
 
